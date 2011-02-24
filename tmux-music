@@ -1,0 +1,8 @@
+#!/bin/bash
+
+tmux new-session -d -s music
+tmux rename-window -t music:0 'vlc'
+tmux new-window -t music:1 'pianobar'
+tmux new-window -t music:2 'shell-fm'
+tmux select-window -t music:2
+tmux attach-session -t music

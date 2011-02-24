@@ -1,0 +1,7 @@
+#!/bin/bash
+
+tmux new-session -d -s play 'finch'
+tmux new-window -t play:1 -n 'vmail' 'vmail'
+tmux new-window -t play:2 'irssi'
+tmux select-window -t play:0
+tmux attach-session -t play

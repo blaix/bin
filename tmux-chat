@@ -1,0 +1,6 @@
+#!/bin/bash
+
+tmux new-session -d -s chat 'finch'
+tmux new-window -t play:1 'irssi'
+tmux select-window -t play:0
+tmux attach-session -t play

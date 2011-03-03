@@ -10,7 +10,4 @@ if [ $2 ]; then
   exit 1
 fi
 
-# TODO: waiting on this patch: https://rails.lighthouseapp.com/projects/8994/tickets/5926-bug-patch-allow-https-uris-to-be-supplied-for-rails-templates
-# so I can specify a github url instead of a filesystem path.
-#rails new $1 -m https://github.com/blaix/rails-app-templates/raw/master/default.rb
-rails new $1 -m /Users/jblake/Dev/rails-app-templates/default.rb
+rails new $1 -m https://github.com/blaix/rails-app-templates/raw/master/default.rb
